@@ -27,6 +27,22 @@ dereference(self)
 
 	OUTPUT: RETVAL
 
+void *
+scalar_to_pointer(class, other)
+        SV *class
+        SV *other
+        
+        CODE:
+                void *myptr = NULL;
+                size_t size = 0;
+                myptr = SvPV(other, size);
+                RETVAL = myptr;
+                
+        OUTPUT:
+                RETVAL
+                
+                
+
 void
 DESTROY(self)
 	FFI_Raw_PtrPtr_t *self
