@@ -27,6 +27,18 @@ dereference(self)
 
 	OUTPUT: RETVAL
 
+void
+copy_to_buffer(self, buffer, size)
+	FFI_Raw_PtrPtr_t *self
+	SV *buffer
+	size_t size
+
+        CODE:
+		void **ptr = self;
+        	sv_setpvn(buffer, *ptr, size);
+        OUTPUT:
+        	buffer
+
 void *
 scalar_to_pointer(class, other)
         SV *class
