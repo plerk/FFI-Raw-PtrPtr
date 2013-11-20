@@ -2,5 +2,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.02      2013-11-20 10:13:49 -0500
+  - added copy_to_buffer method
+
 0.01      2013-11-15 10:02:47 -0500
   - initial version
