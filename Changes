@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - add a there be dragons here warning, don't use me
 
 0.02      2013-11-20 10:13:49 -0500
   - added copy_to_buffer method

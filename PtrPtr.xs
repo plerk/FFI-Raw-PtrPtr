@@ -17,6 +17,16 @@ new(class)
 
 	OUTPUT: RETVAL
 
+void
+test(self, str)
+    FFI_Raw_PtrPtr_t *self
+    const char *str
+  CODE:
+    if(str == NULL)
+      printf("str = NULL\n");
+    else
+      printf("str = %s\n", str);
+
 void *
 dereference(self)
 	FFI_Raw_PtrPtr_t *self
