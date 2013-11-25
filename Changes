@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.03      2013-11-25 11:44:12 -0500
   - add a there be dragons here warning, don't use me
 
 0.02      2013-11-20 10:13:49 -0500
